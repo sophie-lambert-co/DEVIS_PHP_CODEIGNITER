@@ -1,0 +1,61 @@
+/* custom.css */
+.small-form .form-control {
+    font-size: 0.8rem;
+}
+.small-form label {
+    font-size: 0.8rem;
+}
+.form-control {
+    width: 90%;
+}
+.h1, h1{
+    font-size: 2rem;
+}
+
+.h2, h2{
+    font-size: 1.5rem;
+}
+
+.h3, h3{
+    font-size: 1.3rem;
+}
+
+.bg-light {
+    background-color: #ee3144b7!important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid rgb(38, 36, 36);
+    padding: 10px;
+    text-align: left;
+}
+.navbar-custom {
+    background-color: #f210278a !important;
+}
+.btn-primary {
+    background-color: #aa0b1bcc !important;
+    border: 1px solid  #aa0b1bcc !important;
+}
+.btn {
+    background-color:#f210278a !important;
+    border: 1px solid #FFC0CB !important;
+}
+.btn-primary:hover {
+    background-color: #a90616ab !important;
+  
+}
+body {
+    color: #625656; /* Gris foncé */
+}
+.navbar {
+    color: #333; /* Gris foncé */
+}
+.navbar a {
+    color: #4a3d3d; /* Gris foncé */
+}
+
+
