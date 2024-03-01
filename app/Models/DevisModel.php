@@ -131,4 +131,18 @@ class DevisModel extends Model
             'quantity' => $quantity
         ]);
     }
+
+    public function getDevisWithUserName($search = null)
+    {
+        $builder = $this->db->table($this->table)
+            ->join('users', 'users.id = devis.user_id')
+            ->select('devis.*, users.id as user_id, users.user_name');
+
+        if ($search) {
+            $builder->like('users.id', $search);
+        }
+    
+        return $builder->get()->getResultArray();
+        
+    }
 }

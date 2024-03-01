@@ -84,17 +84,6 @@ class UserModel extends Model
         
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /**
      * Définit le mot de passe de l'utilisateur.
      *

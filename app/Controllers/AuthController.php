@@ -62,6 +62,7 @@ class AuthController extends Controller
         // Récupérer les données du formulaire
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
+        //dd("email + password :",$email,$password);
 
         // Validation des données du formulaire
         $this->validation->setRules([
@@ -80,7 +81,9 @@ class AuthController extends Controller
         }
 
         // Récupérer le client  
-        $user = $this->userModel->where('email', $email)->first();
+         $query = $this->userModel->where('email', $email)->get();
+         $user = $query->getRow(); // Utilisez getRow() pour obtenir la première ligne
+        
 
         // Vérifier si l'utilisateur existe et si le mot de passe est correct
         if ($user && password_verify($password, $user->password)) {

@@ -1,9 +1,5 @@
 <?php
 
-// Fichier : app/Controllers/DatabaseController.php
-
-namespace App\Controllers;
-<?php
 
 // Fichier : app/Controllers/DatabaseController.php
 

@@ -29,14 +29,15 @@
             <th>Total du devis</th>
             <th>Actions</th>
         </tr>
-        <?php foreach ($devis as $devis) : ?>
+        <?php foreach ($devis as $deviItem) : ?>
+            
             <tr>
-                <td><?= $devis['user_name'] ?></td>
-                <td><?= $devis['created_at'] ?></td>
-                <td><?= $devis['total_devis'] ?></td>
+                <td><?= $deviItem['user_name'] ?></td>
+                <td><?= $deviItem['created_at'] ?></td>
+                <td><?= $deviItem['total_devis'] ?></td>
                 <td>
-                    <a href="/devis/view/<?= $devis['id'] ?>"class="btn btn-primary">Consulter</a>
-                    <a href="/devis/edit/<?= $devis['id'] ?>"class="btn btn-primary">Modifier</a>
+                    <a href="/devis/view/<?= $deviItem['id'] ?>"class="btn btn-primary">Consulter</a>
+                    <a href="/devis/edit/<?= $deviItem['id'] ?>"class="btn btn-primary">Modifier</a>
                 </td>
             </tr>
         <?php endforeach; ?>
